@@ -1,0 +1,16 @@
+{
+  "monitors": "all",
+  "width": 64,
+  "open_filter": "bar",
+  "autohide": false,
+  "theme": "glassy-blue",
+  "pins": [
+    { "type": "folder", "uri": "file://$HOME/Documents", "name": "Documents" },
+    { "type": "folder", "uri": "file://$HOME/Projects", "name": "Projects" },
+    { "type": "separator" },
+    { "type": "app", "desktop_id": "org.gnome.Terminal.desktop", "name": "Terminal" },
+    { "type": "app", "desktop_id": "nemo.desktop", "name": "Files" },
+    { "type": "app", "desktop_id": "com.microsoft.VSCode.desktop", "name": "VS Code" },
+    { "type": "app", "desktop_id": "org.x.editor.desktop", "name": "Text Editor" }
+  ]
+}

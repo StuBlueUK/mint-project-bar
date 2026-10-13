@@ -1,0 +1,220 @@
+/* Mint Project Bar — glassy blue. All colours live here, never in Python.
+   Requires Muffin compositing on for real translucency. */
+
+#sidebar {
+  background: linear-gradient(180deg,
+    rgba(90, 150, 230, 0.45),
+    rgba(23, 68, 140, 0.55) 40%,
+    rgba(10, 30, 70, 0.65));
+  border-right: 1px solid rgba(150, 200, 255, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25),
+              2px 0 12px rgba(0, 20, 60, 0.4);
+  color: #E8F1FF;
+}
+
+.sidebar-root {
+  padding: 6px;
+}
+
+.sidebar-search {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(150, 200, 255, 0.30);
+  border-radius: 10px;
+  color: #E8F1FF;
+  padding: 6px 8px;
+}
+.sidebar-search:focus {
+  border-color: rgba(180, 220, 255, 0.65);
+  box-shadow: 0 0 6px rgba(120, 180, 255, 0.55);
+}
+
+.pin-scroll {
+  background: transparent;
+}
+.pin-scroll undershoot.top,
+.pin-scroll undershoot.bottom {
+  background: none;
+}
+
+.pin-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 8px 4px;
+  color: #E8F1FF;
+  transition: all 120ms ease;
+}
+.pin-button:hover {
+  background: rgba(120, 180, 255, 0.25);
+  border-color: rgba(180, 220, 255, 0.5);
+  box-shadow: 0 0 8px rgba(120, 180, 255, 0.6);
+}
+.pin-button:active {
+  background: rgba(90, 160, 255, 0.35);
+  border-color: rgba(180, 220, 255, 0.6);
+}
+.pin-button.pin-missing {
+  border: 1px dashed rgba(255, 150, 150, 0.6);
+}
+
+.section-label {
+  color: rgba(200, 225, 255, 0.75);
+  font-size: 8pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.running-list {
+  border-top: 1px solid rgba(150, 200, 255, 0.25);
+  padding-top: 4px;
+}
+.running-empty {
+  color: rgba(200, 225, 255, 0.5);
+  font-size: 8pt;
+  font-style: italic;
+}
+.run-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  padding: 6px 4px;
+  color: #E8F1FF;
+}
+.run-button:hover {
+  background: rgba(120, 180, 255, 0.22);
+  box-shadow: 0 0 8px rgba(120, 180, 255, 0.5);
+}
+.run-button.run-active {
+  background: rgba(90, 160, 255, 0.35);
+  border-color: rgba(180, 220, 255, 0.65);
+  box-shadow: 0 0 10px rgba(120, 180, 255, 0.7);
+}
+.run-badge {
+  background: rgba(90, 160, 255, 0.9);
+  border: 1px solid rgba(220, 240, 255, 0.8);
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 8pt;
+  font-weight: bold;
+  padding: 0 5px;
+  margin: 0 0 0 0;
+}
+
+.run-flyout {
+  background: rgba(15, 40, 90, 0.97);
+  border: 1px solid rgba(150, 200, 255, 0.45);
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px rgba(0, 20, 60, 0.5);
+}
+.detail-pane {
+  background: linear-gradient(180deg,
+    rgba(70, 120, 200, 0.50),
+    rgba(18, 55, 120, 0.60) 50%,
+    rgba(8, 25, 60, 0.70));
+  border-left: 1px solid rgba(150, 200, 255, 0.35);
+  border-radius: 0 12px 12px 0;
+  padding: 8px;
+}
+.detail-header {
+  border-bottom: 1px solid rgba(150, 200, 255, 0.25);
+  padding-bottom: 6px;
+}
+.detail-title {
+  color: #E8F1FF;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.detail-action {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #E8F1FF;
+  font-size: 8pt;
+  padding: 2px 8px;
+}
+.detail-action:hover {
+  background: rgba(200, 100, 100, 0.35);
+}
+.detail-hint {
+  color: rgba(200, 225, 255, 0.55);
+  font-size: 8pt;
+  font-style: italic;
+}
+.flyout-row {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: #E8F1FF;
+}
+.flyout-row:hover {
+  background: rgba(120, 180, 255, 0.28);
+  border-color: rgba(180, 220, 255, 0.5);
+}
+.flyout-row-active {
+  background: rgba(90, 160, 255, 0.35);
+  border-color: rgba(180, 220, 255, 0.6);
+}
+.flyout-dot {
+  color: rgba(160, 210, 255, 0.9);
+  font-size: 8pt;
+}
+.flyout-label {
+  color: #E8F1FF;
+  font-size: 9pt;
+}
+
+.add-dialog {
+  background: rgba(20, 50, 110, 0.97);
+  color: #E8F1FF;
+}
+.add-dialog entry {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(150, 200, 255, 0.3);
+  border-radius: 8px;
+  color: #E8F1FF;
+}
+
+.pin-label {
+  color: #E8F1FF;
+  font-size: 9pt;
+}
+.pin-button.pin-compact {
+  padding: 4px 1px;
+}
+.pin-label-small {
+  font-size: 7.5pt;
+}
+
+.running-dot {
+  color: rgba(160, 210, 255, 0.9);
+  font-size: 7pt;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(150, 200, 255, 0.25);
+  padding-top: 6px;
+}
+
+.sysmon {
+  color: rgba(220, 235, 255, 0.85);
+  font-size: 8pt;
+  font-family: monospace;
+}
+
+.footer-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #E8F1FF;
+}
+.footer-btn:hover {
+  background: rgba(120, 180, 255, 0.25);
+}
+
+tooltip {
+  background: rgba(15, 40, 90, 0.95);
+  border: 1px solid rgba(150, 200, 255, 0.4);
+  border-radius: 8px;
+  color: #E8F1FF;
+}
