@@ -67,6 +67,9 @@ sudo apt install python3-gi gir1.2-gtk-3.0 gir1.2-gtklayershell-0.1 libgtk-layer
 # run (once scaffolded)
 python3 mintprojectbar.py
 
+# build the .deb (output in dist/, gitignored)
+./packaging/build-deb.sh 0.1.0
+
 # lint / typecheck (use if added)
 ruff check . && python3 -m py_compile $(git ls-files '*.py')
 ```

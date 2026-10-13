@@ -1,0 +1,13 @@
+Package: mint-project-bar
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: djshades2004 <djshades2004@gmail.com>
+Depends: python3, python3-gi, gir1.2-gtk-3.0
+Recommends: python3-psutil, python3-xdg, gir1.2-gtklayershell-0.1, libgtk-layer-shell0, gir1.2-wnck-3.0
+Description: Left-edge dock for Linux Mint (Cinnamon-first)
+ Pin folders and apps to a glassy blue sidebar on any monitor,
+ see and switch between open windows grouped by app.
+ Runs on X11 out of the box; layer-shell + Wnck unlock anchoring
+ and the window switcher.

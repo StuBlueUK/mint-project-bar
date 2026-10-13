@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Mint Project Bar
+Comment=Left-edge dock: pin folders and apps, switch windows
+Exec=mint-project-bar
+Icon=dock
+Terminal=false
+Type=Application
+Categories=Utility;
+X-GNOME-Autostart-enabled=true
+Hidden=false
